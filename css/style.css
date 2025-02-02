@@ -594,3 +594,24 @@ h6,
 .text-null{
     color: #fff;
 }
+
+@media screen and (max-width: 1460px) {
+   .text-size-10{
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen and (max-width: 1135px) {
+    .text-size-10{
+         font-size: 8px !important;
+     }
+ }
+
+ .zoom-effect {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom-effect:hover {
+    transform: scale(1.07); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
