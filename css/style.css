@@ -288,7 +288,7 @@ h6,
     height: 5px;
     left: 0;
     bottom: 0;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: 2px;
 }
 
@@ -485,6 +485,40 @@ h6,
     transform: scale(1.15);
 }
 
+/* Gallery  */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+.gallery-item .overlay i {
+    font-size: 2rem;
+    color: #fff;
+}
+
 /* Contact Map  */
 .mapouter{
     position:relative;
@@ -555,4 +589,8 @@ h6,
         padding-right: 1rem;
     }
     
+}
+
+.text-null{
+    color: #fff;
 }
